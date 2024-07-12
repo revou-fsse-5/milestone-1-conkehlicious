@@ -402,6 +402,11 @@ h6 {
     color: black;
     font-weight: 700;
   }
+  .darkmode-container button {
+    position: relative;
+    right: 850px;
+    top: 6px;
+  }
   .title-hero {
     font-size: 70px;
     line-height: 1;
@@ -410,9 +415,9 @@ h6 {
   .img-hero {
   }
   .img-hero img {
-    width: 20px;
+    width: 300px;
     position: relative;
-    top: 0;
+    right: 700px;
   }
   .container-promo {
     margin-top: 200px;
