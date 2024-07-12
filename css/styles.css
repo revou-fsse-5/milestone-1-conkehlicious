@@ -11,28 +11,33 @@
 body {
   background-color: rgb(180, 177, 177);
   font-family: poppins, arial;
-  height: 4000px;
+  height: 4700px;
 }
 .logo {
   text-align: center;
   line-height: 0.5;
   font-size: 20px;
+  margin-bottom: 10px;
+}
+.logo span {
+  color: red;
 }
 /* navbar */
 nav {
-  background-color: #0c2d57;
   width: 100%;
+  height: 70px;
   text-align: center;
-  position: fixed;
+  background-color: #0c2d57;
+  position: sticky;
   z-index: 9999;
-  top: 0;
+  top: -4px;
 }
 .nav-menu {
   display: flex;
   justify-content: center;
   gap: 30px;
-  font-size: 30px;
-  padding-top: 50px;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 .nav-item a {
@@ -52,14 +57,12 @@ label {
 }
 /* navbar end */
 
-/* container hero start */
-
 .container-hero {
   width: 100%;
-  margin-top: 130px;
 }
 .box-hero {
   width: 100%;
+  margin-top: -80px;
 }
 .title-hero {
   text-align: center;
@@ -73,7 +76,7 @@ label {
 .img-hero img {
   width: 900px;
   position: absolute;
-  top: 320px;
+  top: 350px;
   left: 450px;
 }
 @keyframes slide-in {
@@ -137,6 +140,8 @@ label {
   margin-left: 35px;
   list-style-image: url(../images/icons8-motorbike-25.png);
 }
+
+/* MEET OUR BIKES- CONTAINER */
 .container-bikes {
   text-align: center;
   font-size: 60px;
@@ -199,13 +204,15 @@ button:hover {
   color: #df9d19;
   font-weight: 600;
 }
+
 /* tour in vegas */
 .container-tour {
   background-color: #0c2d57;
   color: white;
   margin-top: 200px;
+  padding-top: 50px;
   text-align: center;
-  font-size: 60px;
+  font-size: 30px;
 }
 .tour-menu {
   width: 100%;
@@ -235,7 +242,6 @@ button:hover {
   top: 0;
   right: -100%;
   position: absolute;
-  background-color: rgba(23, 76, 78, 0.055);
   backdrop-filter: blur(5px);
   border-radius: 15px;
   color: white;
@@ -249,13 +255,13 @@ button:hover {
   right: 0;
 }
 .card-title {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
   color: white;
 }
 .card-sub-title {
   text-transform: capitalize;
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 600;
   color: white;
 }
@@ -269,13 +275,15 @@ button:hover {
   outline: none;
   font-weight: 500;
   cursor: pointer;
+  margin: auto;
 }
 
 /* shop online gear */
 .container-gears-grid {
   width: 80%;
   margin: auto;
-  margin-top: 150px;
+  margin-top: 100px;
+  font-size: 30px;
 }
 .container-gears-grid h2 {
   text-align: center;
@@ -283,7 +291,7 @@ button:hover {
 .gears-menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
   gap: 20px;
 }
 
@@ -298,7 +306,60 @@ button:hover {
 .img6 {
   grid-column: span 2;
 }
+.shop-btn {
+  padding: 5px;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  cursor: cell;
+}
 
+.gear .shop-btn {
+  position: relative;
+  top: -70px;
+  left: 280px;
+}
+/* footer */
+footer {
+  width: 100%;
+  margin-top: 100px;
+  background-color: var(--main-blue);
+  color: white;
+}
+.footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px;
+  line-height: 3;
+}
+.company h3 {
+  font-size: 50px;
+}
+.company span {
+  color: red;
+}
+.sosmed i {
+  font-size: 20px;
+  padding-right: 30px;
+  color: #df272e;
+}
+.quicklink a {
+  color: white;
+}
+.quicklink a:hover {
+  color: #df272e;
+  cursor: cell;
+}
+.information span {
+  padding: 10px;
+}
+.information i {
+  color: red;
+}
+h6 {
+  text-align: center;
+}
 /* media responsive for mobile */
 
 @media (max-width: 430px) {
