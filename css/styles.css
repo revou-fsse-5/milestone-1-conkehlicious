@@ -485,10 +485,10 @@ h6 {
     margin-top: -90px;
   }
   .container-tour {
+    width: 100%;
     margin-top: -80px;
   }
   .tour-menu {
-    margin-top: ;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -496,6 +496,9 @@ h6 {
   }
 
   /* shop online */
+  .container-gears-grid {
+    width: 90%;
+  }
   .gears-menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
