@@ -17,7 +17,8 @@ body {
   text-align: center;
   line-height: 0.5;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-top: -20px;
+  margin-bottom: 30px;
 }
 .logo span {
   color: red;
@@ -375,9 +376,11 @@ h6 {
   body {
     max-width: 100%;
     overflow-x: hidden;
-    overflow-y: scroll;
   }
   /* navbar start */
+  nav {
+    width: 100%;
+  }
   .menus {
     width: 100%;
     max-height: 0;
@@ -410,6 +413,7 @@ h6 {
 
   /* dark mode start */
   .darkmode-container button {
+    width: 100px;
     position: relative;
     right: 850px;
     top: 6px;
@@ -453,7 +457,7 @@ h6 {
 
   /* container tour */
   .container-explore {
-    width: auto;
+    width: 100%;
   }
   .tour {
     font-size: 20px;
@@ -499,6 +503,8 @@ h6 {
     right: 460px;
     margin-top: -90px;
   }
+
+  /* container tour packages */
   .container-tour {
     width: 100%;
     margin-top: -80px;
