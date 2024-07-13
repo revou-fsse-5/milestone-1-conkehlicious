@@ -11,7 +11,7 @@
 body {
   background-color: rgb(180, 177, 177);
   font-family: poppins, arial;
-  height: 4700px;
+  overflow-x: hidden;
 }
 .logo {
   text-align: center;
