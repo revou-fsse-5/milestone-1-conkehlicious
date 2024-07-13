@@ -8,7 +8,7 @@
 #### https://rentmevegas.netlify.app/
 #### https://revou-fsse-5.github.io/milestone-1-conkehlicious/ 
 
-
+<img width="100%" src="images/mainpage.png" alt="github" />
 
 <h2>Github Deployment</h2>
 <img width="100%" src="images/github.png" alt="github" />
