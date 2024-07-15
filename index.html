@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- link to poppins font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,11 +17,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <title>RENT ME VEGAS</title>
+    <title>RENT ME VEGAS MODIF</title>
   </head>
-
   <body>
-    <!-- navbar -->
+    <!-- NAVBAR START -->
     <div class="logo">
       <img src="images/royalgif02.gif" width="150px" alt="" />
       <h4>RENT ME <span>VEGAS</span></h4>
@@ -43,21 +41,20 @@
           <li class="nav-item">
             <a href="#"><i class="fa-solid fa-user"></i></a>
           </li>
+          <li>
+            <button onclick="changeBackground('darkolivegreen')">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </li>
+          <li>
+            <button onclick="changeBackground('white')">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+          </li>
         </ul>
       </div>
-      <!-- dark mode start 
-      <div class="darkmode-container">
-        <button onclick="changeBackground('darkolivegreen')">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-        <button onclick="changeBackground('white')">
-          <i class="fa-solid fa-sun"></i>
-        </button>
-      </div>-->
-
-      <!-- dark mode end -->
     </nav>
-    <!-- navbar -end -->
+    <!-- NAVBAR END -->
 
     <!-- container hero start -->
     <div class="container-hero">
@@ -66,12 +63,13 @@
           <h1>RENT ME</h1>
         </div>
         <div class="img-hero">
-          <img src="images/caferacer03.png" alt="royal" />
+          <img src="images/caferacer03.png" width="700px" alt="royal" />
         </div>
       </div>
     </div>
+    <!-- container hero end -->
 
-    <!-- container accessorries -->
+    <!-- container promo start-->
     <div class="container-promo">
       <div class="promo1">
         <div class="promo1-img">
@@ -89,7 +87,9 @@
         </div>
       </div>
     </div>
-    <!-- container explore -->
+    <!-- container promo end -->
+
+    <!-- container explore start-->
     <div class="container-explore">
       <ul class="tour">
         <h1>EXPLORE VEGAS WITH US</h1>
@@ -106,14 +106,16 @@
         <li>2HR, 4HR & Daily Rentals</li>
       </ul>
     </div>
+    <!-- container explore end -->
 
     <!-- container MEET our bikes -->
     <div class="container-bikes">
       <h2>MEET OUR BIKES COLLECTION</h2>
+
       <div class="bike-menu">
         <div class="caferacer-menu">
           <div class="caferacer-img">
-            <img src="images/caferacer04.png" width="700px" alt="caferacer01" />
+            <img src="images/caferacer04.png" alt="caferacer01" />
           </div>
           <div class="caferacer-txt">
             <p>CAFE RACER BIKE</p>
@@ -122,12 +124,12 @@
         </div>
 
         <div class="touringbike-menu">
+          <div class="touringbike-img">
+            <img src="images/softtail.png" alt="softtail" />
+          </div>
           <div class="touringbike-txt">
             <p>TOURING BIKE</p>
             <button>RENT ME</button>
-          </div>
-          <div class="touringbike-img">
-            <img src="images/softtail.png" width="700px" alt="softtail" />
           </div>
         </div>
       </div>
@@ -272,6 +274,7 @@
 
     <!-- footer end -->
     <h6>&copy;JUNE 2024 REVOU-BERLIN CLASS BY CONKEHLICIOUS</h6>
+
     <script src="js/script.js"></script>
   </body>
 </html>

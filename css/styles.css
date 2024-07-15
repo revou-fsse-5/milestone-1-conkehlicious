@@ -11,7 +11,6 @@
 body {
   background-color: rgb(180, 177, 177);
   font-family: poppins, arial;
-  overflow-x: hidden;
 }
 .logo {
   text-align: center;
@@ -33,14 +32,7 @@ nav {
   z-index: 9999;
   top: -4px;
 }
-.darkmode-container {
-  position: relative;
-  top: -28px;
-  left: 850px;
-}
-.darkmode-container button {
-  width: 50px;
-}
+
 .nav-menu {
   display: flex;
   justify-content: center;
@@ -68,25 +60,16 @@ label {
 
 .container-hero {
   width: 100%;
+  height: 550px;
 }
-.box-hero {
-  width: 100%;
-  margin-top: -80px;
-}
+
 .title-hero {
+  font-size: 150px;
   text-align: center;
-  font-size: 170px;
-  transform: scale(1, 2);
   color: var(--main-blue);
   transform: translateX(-70%);
   opacity: 0;
   animation: slide-in 2s ease-out forwards;
-}
-.img-hero img {
-  width: 900px;
-  position: relative;
-  top: -300px;
-  left: 450px;
 }
 @keyframes slide-in {
   20% {
@@ -99,9 +82,14 @@ label {
   }
 }
 
-/* container promo */
+.img-hero {
+  text-align: center;
+  position: relative;
+  top: -300px;
+}
+
+/* container promo start*/
 .container-promo {
-  margin-top: -300px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -126,29 +114,28 @@ label {
 .promo3 {
   background-color: #df272e;
 }
+/* container promo end */
 
-/* container explore tour */
+/* container explore  start*/
 .container-explore {
   margin-top: 50px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/vegas-sign.jpg);
   background-size: cover;
   background-position: center;
-  height: 700px;
-  width: auto;
-  color: rgb(231, 220, 220);
 }
 .tour {
   display: grid;
   grid-column: 1fr;
   justify-content: center;
-  padding-top: 90px;
-  font-size: 35px;
+  font-size: 25px;
+  color: rgb(201, 194, 194);
+  padding: 100px 0 100px 0;
 }
 .tour li {
-  margin-left: 35px;
   list-style-image: url(../images/icons8-motorbike-25.png);
 }
+/* container explore  end */
 
 /* MEET OUR BIKES- CONTAINER */
 .container-bikes {
@@ -158,13 +145,11 @@ label {
 .caferacer-menu {
   width: 80%;
   height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   align-items: center;
   margin: auto;
-  gap: 5px;
-  transform: skew(-25deg);
   border: 10px red solid;
+  transform: skew(-25deg);
 }
 
 .caferacer-txt,
@@ -173,31 +158,28 @@ label {
   font-size: 70px;
   font-weight: 700;
 }
-.caferacer-img {
-  width: 100%;
-  height: 350px;
-}
+
 .caferacer-img img {
+  width: 700px;
   transform: skew(25deg);
+  margin-top: 200px;
 }
 
 .touringbike-menu {
   width: 80%;
   height: 300px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 150px;
+  display: flex;
   align-items: center;
-  transform: skew(-25deg);
+  margin: auto;
+  margin-top: 130px;
   border: 10px red solid;
-  margin-left: 150px;
+  transform: skew(-25deg);
 }
-.touringbike-img {
-  width: 100%;
-  height: 350px;
-}
+
 .touringbike-img img {
+  width: 700px;
   transform: skew(25deg);
+  margin-top: 200px;
 }
 .container-bikes button {
   width: 300px;
@@ -370,9 +352,9 @@ footer {
 h6 {
   text-align: center;
 }
-/* media responsive for mobile */
 
-@media (max-width: 430px) {
+/* media for mobile */
+@media (max-width: 460px) {
   body {
     max-width: 100%;
     overflow-x: hidden;
@@ -396,7 +378,7 @@ h6 {
     margin-top: 25px;
   }
   #check:checked ~ .menus {
-    max-height: 350px;
+    max-height: 400px;
   }
   .nav-menu {
     flex-direction: column;
@@ -411,31 +393,16 @@ h6 {
   }
   /* navbar end */
 
-  /* dark mode start 
-  .darkmode-container button {
-    width: 100px;
-    position: relative;
-    right: 850px;
-    top: 6px;
-  }
-  /* dark mode end */
-
   /* container hero start */
-  .container-hero {
-    width: 100%;
-  }
-
   .title-hero {
     font-size: 70px;
     line-height: 1;
-    margin-top: 70px;
   }
-
   .img-hero img {
     width: 300px;
-    margin-left: -400px;
     margin-top: 80px;
   }
+  /* container hero end */
 
   /* container promo start */
   .container-promo {
@@ -455,59 +422,62 @@ h6 {
   }
   /* container promo end */
 
-  /* container tour */
+  /* container explore start */
+
   .container-explore {
     width: 100%;
   }
   .tour {
     font-size: 20px;
-    padding: 20px;
-    padding-top: 100px;
-    line-height: 2;
+    padding: 40px;
+  }
+  /* container explore end */
+
+  /* container meet our bikes */
+  .container-bikes {
+    width: 100%;
+    height: 400px;
   }
   .container-bikes h2 {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 40px;
+    margin-top: 15px;
+    line-height: 1;
   }
   .bike-menu {
-    margin-top: -30px;
     width: 100%;
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: -220px;
   }
   .caferacer-menu,
   .touringbike-menu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    transform: skew(0deg);
     border: none;
   }
-  .caferacer-txt {
-    position: relative;
-    top: 100px;
-    right: 270px;
-    font-size: 20px;
-  }
   .caferacer-img img {
-    width: 350px;
-    position: relative;
-    margin-top: 50px;
-  }
-  .touringbike-txt {
-    font-size: 20px;
-    position: relative;
-    top: -20px;
-    right: 80px;
+    width: 200px;
+    transform: skew(5deg);
   }
   .touringbike-img img {
-    width: 350px;
-    position: relative;
-    right: 460px;
-    margin-top: -90px;
+    width: 200px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    transform: skew(5deg);
+  }
+  .caferacer-txt,
+  .touringbike-txt {
+    font-size: 20px;
+    margin-top: -40px;
   }
 
   /* container tour packages */
   .container-tour {
     width: 100%;
-    margin-top: -80px;
+    margin-top: 80px;
   }
   .tour-menu {
     width: 100%;
@@ -519,6 +489,12 @@ h6 {
   /* shop online */
   .container-gears-grid {
     width: 90%;
+    margin-top: 20px;
+  }
+  .container-gears-grid h2 {
+    font-size: 35px;
+    line-height: 1;
+    padding-bottom: 20px;
   }
   .gears-menu-grid {
     display: grid;
