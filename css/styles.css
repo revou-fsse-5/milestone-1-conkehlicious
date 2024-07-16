@@ -466,7 +466,7 @@ h6 {
     height: 300px;
     display: flex;
     flex-direction: column;
-    margin-top: -220px;
+    margin-top: -198px;
   }
   .caferacer-menu,
   .touringbike-menu {
@@ -490,6 +490,7 @@ h6 {
   .touringbike-txt {
     font-size: 20px;
     margin-top: -40px;
+    transform: skew(-25deg);
   }
 
   /* container tour packages */
@@ -530,6 +531,8 @@ h6 {
     line-height: 1.8;
   }
   .whatsapp {
-    right: 10px;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
   }
 }
