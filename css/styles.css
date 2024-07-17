@@ -488,6 +488,8 @@ h6 {
   }
   .caferacer-txt,
   .touringbike-txt {
+    width: 60%;
+    margin: auto;
     font-size: 20px;
     margin-top: -40px;
     transform: skew(-25deg);
